@@ -1,0 +1,6 @@
+@mixin body($f-st, $letter-sp, $fw, $fs) {
+  font-style: $f-st;
+  letter-spacing: $letter-sp;
+  font-weight: $fw;
+  font-size: $fs;
+}
