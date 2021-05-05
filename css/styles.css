@@ -15,6 +15,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid red;
 }
 
 body {
@@ -89,12 +90,13 @@ img {
 }
 
 .logo {
+  display: inline-block;
   margin-right: 94px;
+  padding-top: 24px;
+  padding-bottom: 26px;
 }
 
 .logo__span--accent {
-  padding-top: 24px;
-  padding-bottom: 26px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -524,31 +526,78 @@ img {
 .header {
   background-color: var(--bg-color);
   border-bottom: 1px solid #ececec;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header-contacts {
-  display: inline-flex;
+  margin-right: auto;
   margin-left: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .header {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
 .header-contacts__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--main-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts__link--margin {
-  margin-left: 50px;
-}
-
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1199.98px) {
+  .header-contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts__link--margin {
+    margin-left: 30px;
+  }
+  .header-contacts__link:hover, .header-contacts__link:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-contacts__icon {
@@ -559,6 +608,7 @@ img {
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .section {
@@ -568,14 +618,13 @@ img {
 
 .slogan {
   display: block;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-color: var(--dark-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -583,18 +632,40 @@ img {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .slogan {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
+
 .slogan__title {
-  max-width: 696px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .slogan__title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .slogan__button {
@@ -841,8 +912,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  min-height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
