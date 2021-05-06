@@ -555,6 +555,18 @@ img {
   flex-direction: column;
 }
 
+@media screen and (min-width: 380px) {
+  .mobile-menu-wrap {
+    padding: 50px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-wrap {
+    display: none;
+  }
+}
+
 .mobile-menu__item {
   margin-bottom: 35px;
 }
@@ -621,6 +633,12 @@ img {
   height: 40px;
   background-color: transparent;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu-btn {
+    display: none;
+  }
 }
 
 .mob-menu-svg {
