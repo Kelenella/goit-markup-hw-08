@@ -15,7 +15,6 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 2px solid red;
 }
 
 body {
@@ -237,7 +236,7 @@ img {
 
 .form-subscribe__button {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   width: 200px;
@@ -260,6 +259,15 @@ img {
   .form-subscribe__button {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .form-subscribe__button {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
   }
 }
 
@@ -1204,7 +1212,30 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .wrapper-address {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .wrapper-address {
     margin-bottom: 60px;
     text-align: center;
@@ -1236,10 +1267,6 @@ img {
   color: #ffffff;
 }
 
-.wrapper-join {
-  margin-left: 70px;
-}
-
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
   .wrapper-join {
     display: flex;
@@ -1248,6 +1275,18 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .wrapper-join {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-join {
+    margin-left: 70px;
   }
 }
 
@@ -1262,6 +1301,13 @@ img {
 
 .wrapper-subscribe {
   margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .wrapper-subscribe {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .form-subscribe {
@@ -1282,11 +1328,23 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .form-subscribe__text {
+    text-align: center;
+  }
+}
+
 .form-div {
   display: flex;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .form-div {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
   .form-div {
     display: block;
   }
@@ -1304,7 +1362,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767.98px) {
+@media screen and (min-width: 320px) and (max-width: 1199.98px) {
   .form-subscribe__input {
     max-width: 450px;
     position: relative;
@@ -1314,11 +1372,23 @@ img {
 .form-subscribe__icon {
   position: absolute;
   bottom: 0;
-  right: 100px;
+  right: 110px;
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
   margin-left: 10px;
   fill: var(--bg-color);
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 1199.98px) {
+  .form-subscribe__icon {
+    right: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscribe__icon {
+    right: 40px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
