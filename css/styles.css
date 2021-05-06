@@ -1307,13 +1307,14 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
   .form-subscribe__input {
     max-width: 450px;
+    position: relative;
   }
 }
 
 .form-subscribe__icon {
   position: absolute;
   bottom: 0;
-  right: 145px;
+  right: 100px;
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
