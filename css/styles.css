@@ -537,12 +537,17 @@ img {
   padding-right: 40px;
   padding-bottom: 50px;
   padding-left: 40px;
-  top: 50px;
-  left: 0;
+  top: 0;
+  left: -100%;
   width: 100%;
   height: 100vh;
   z-index: 100;
   background-color: #fff;
+  transition: left 250ms;
+}
+
+.mobile-menu-wrap.is-open {
+  left: 0;
 }
 
 .mobile-menu {
@@ -609,6 +614,8 @@ img {
 }
 
 .mob-menu-btn {
+  position: relative;
+  z-index: 110;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -619,6 +626,18 @@ img {
 .mob-menu-svg {
   width: 40px;
   height: 40px;
+}
+
+.mob-menu-close {
+  display: none;
+}
+
+.is-open .mob-menu-close {
+  display: block;
+}
+
+.is-open .mob-menu-icon {
+  display: none;
 }
 
 .current {
