@@ -29,11 +29,11 @@
           </a>
           <ul class="menu">
             <li class="menu__item menu__item--margin">
-              <a class="menu__link menu__link--current" href="./index.html">Студия</a>
+              <a class="menu__link" href="./index.html">Студия</a>
             </li>
 
             <li class="menu__item menu__item--margin">
-              <a class="menu__link" href="./portfolio.html">Портфолио</a>
+              <a class="menu__link menu__link--current" href="./portfolio.html">Портфолио</a>
             </li>
 
             <li class="menu__item menu__item--margin">
@@ -73,11 +73,11 @@
     <div class="mobile-menu-wrap" data-menu>
       <ul class="mobile-menu">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link current" href="./index.html">Студия</a>
+          <a class="mobile-menu__link" href="./index.html">Студия</a>
         </li>
 
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+          <a class="mobile-menu__link current" href="./portfolio.html">Портфолио</a>
         </li>
 
         <li class="mobile-menu__item">
@@ -145,7 +145,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-1.jpg" width="370" alt="Веб-сайт" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port1-desktop.jpg 1x, ./images/desktop/port1@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port1-tablet.jpg 1x, ./images/tablet/port1@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port1-mobile.jpg 1x, ./images/mobile/port1@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port1-desktop.jpg" width="450" alt="Веб-сайт" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Технокряк</h2>
@@ -163,7 +177,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-2.jpg" width="370" alt="Дизайн" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port2-desktop.jpg 1x, ./images/desktop/port2@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port2-tablet.jpg 1x, ./images/tablet/port2@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port2-mobile.jpg 1x, ./images/mobile/port2@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port2-desktop.jpg" width="450" alt="Дизайн" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Постер New Orlean vs Golden Star</h2>
@@ -181,7 +209,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-3.jpg" width="370" alt="Приложение" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port3-desktop.jpg 1x, ./images/desktop/port3@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port3-tablet.jpg 1x, ./images/tablet/port3@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port3-mobile.jpg 1x, ./images/mobile/port3@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port3-desktop.jpg" width="450" alt="Приложение" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Ресторан Seafood</h2>
@@ -199,7 +241,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-4.jpg" width="370" alt="Маркетинг" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port4-desktop.jpg 1x, ./images/desktop/port4@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port4-tablet.jpg 1x, ./images/tablet/port4@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port4-mobile.jpg 1x, ./images/mobile/port4@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port4-desktop.jpg" width="450" alt="Маркетинг" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Проект Prime</h2>
@@ -217,7 +273,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-5.jpg" width="370" alt="Приложение Boxes" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port5-desktop.jpg 1x, ./images/desktop/port5@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port5-tablet.jpg 1x, ./images/tablet/port5@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port5-mobile.jpg 1x, ./images/mobile/port5@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port5-desktop.jpg" width="450" alt="Приложение Boxes" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Проект Boxes</h2>
@@ -235,7 +305,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-6.jpg" width="370" alt="Веб-сайт" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port6-desktop.jpg 1x, ./images/desktop/port6@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port6-tablet.jpg 1x, ./images/tablet/port6@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port6-mobile.jpg 1x, ./images/mobile/port6@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port6-desktop.jpg" width="450" alt="Веб-сайт" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Inspiration has no Borders</h2>
@@ -253,7 +337,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-7.jpg" width="370" alt="Дизайн" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port7-desktop.jpg 1x, ./images/desktop/port7@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port7-tablet.jpg 1x, ./images/tablet/port7@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port7-mobile.jpg 1x, ./images/mobile/port7@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port7-desktop.jpg" width="450" alt="Дизайн" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Издание Limited Edition</h2>
@@ -271,7 +369,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-8.jpg" width="370" alt="Маркетинг" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port8-desktop.jpg 1x, ./images/desktop/port8@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port8-tablet.jpg 1x, ./images/tablet/port8@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port8-mobile.jpg 1x, ./images/mobile/port8@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port8-desktop.jpg" width="450" alt="Маркетинг" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Проект LAB</h2>
@@ -289,7 +401,21 @@
                       для цифрового шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                   </div>
-                  <img src="./images/portfolio/img-9.jpg" width="370" alt="Приложение Business" />
+                  <picture>
+                    <source
+                      srcset="./images/desktop/port9-desktop.jpg 1x, ./images/desktop/port9@2x-desktop.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/tablet/port9-tablet.jpg 1x, ./images/tablet/port9@2x-tablet.jpg 2x"
+                      media="(min-wdth: 768px)"
+                    />
+                    <source
+                      srcset="./images/mobile/port9-mobile.jpg 1x, ./images/mobile/port9@2x-mobile.jpg 2x"
+                      media="(max-wdth: 767px)"
+                    />
+                    <img src="./images/desktop/port9-desktop.jpg" width="450" alt="Приложение Business" />
+                  </picture>
                 </div>
                 <div class="card-div">
                   <h2 class="card-div__name">Growing Business</h2>
