@@ -193,6 +193,12 @@ img {
   color: var(--title-color);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section-title {
     font-size: 36px;
@@ -877,6 +883,13 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .slogan {
