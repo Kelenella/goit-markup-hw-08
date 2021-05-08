@@ -13,7 +13,6 @@
 }
 
 .privilege-list__item {
-  // flex-basis: calc(100% - 30px);
   flex-basis: 100%;
   display: inline-block;
   justify-content: center;
@@ -52,8 +51,12 @@
 }
 
 .privilege-list__subtitle {
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
+
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
