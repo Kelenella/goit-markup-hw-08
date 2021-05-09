@@ -788,13 +788,13 @@ img {
 
 @media screen and (min-width: 480px) {
   .header {
-    width: 480px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    width: 768px;
+    width: 100%;
   }
 }
 
